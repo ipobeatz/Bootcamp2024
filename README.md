@@ -45,3 +45,23 @@ Field Analysis, hassas tarımı kolaylaştırmak için geniş miktarda toprak ve
 - Araştırma Kurumları ve Üniversiteler
 - Kooperatifler ve Tarım Birlikleri
 
+# Sprint 1
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 340 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
+
+
+- **Daily Scrum**: Daily Scrum yapılamadı çünkü mesajlara dönüt alınamadı.
+
+
+- **Sprint Review**: 
+Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, arduino kurulumu ve firebase'e bağlanması sağlanmış, uygulama için veritabanı olarak firebase servisleri aktif edilmiş ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: Mustafa Aksoy
+
+- **Sprint Retrospective:**
+  - Roller ile ilgili düzenleme yapılmıştır.
+  - Takım içindeki görev dağılımı aktiflik olmadığından yapılamamıştır.
+  - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
+ 
+
