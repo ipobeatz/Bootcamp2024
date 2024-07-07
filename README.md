@@ -40,8 +40,8 @@ Field Analysis, hassas tarımı kolaylaştırmak için geniş miktarda toprak ve
 ## Hedef Kitle
 
 - Çiftçiler ve Tarım Üreticileri
-- Ziraat Mühendisleri ve Danışmanlar:
-- Tarım Şirketleri:
-- Araştırma Kurumları ve Üniversiteler:
-- Kooperatifler ve Tarım Birlikleri:
+- Ziraat Mühendisleri ve Danışmanlar
+- Tarım Şirketleri
+- Araştırma Kurumları ve Üniversiteler
+- Kooperatifler ve Tarım Birlikleri
 
