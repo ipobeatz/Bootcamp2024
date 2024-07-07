@@ -57,7 +57,7 @@ Field Analysis, hassas tarımı kolaylaştırmak için geniş miktarda toprak ve
 
 
 - **Sprint Review**: 
-Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, arduino kurulumu ve firebase'e bağlanması sağlanmış, uygulama için veritabanı olarak firebase servisleri aktif edilmiş ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: Mustafa Aksoy
+Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, firebase'e henüz bağlanma sağlanamadı, uygulama için veritabanı olarak firebase servisleri henüz aktif edilemedi ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: İbrahim Çakır
 
 - **Sprint Retrospective:**
   - Roller ile ilgili düzenleme yapılmıştır.
