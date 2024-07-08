@@ -56,7 +56,7 @@ Field Analysis, hassas tarımı kolaylaştırmak için geniş miktarda toprak ve
 - **Daily Scrum**: Daily Scrum yapılamadı çünkü mesajlara dönüt alınamadı.
 
 - **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1](https://raw.githubusercontent.com/ipobeatz/Bootcamp2024/main/ProjectManagement/Sprint1/sprint board screenshot.png) 
+![Backlog 1](https://raw.githubusercontent.com/ipobeatz/Bootcamp2024/main/ProjectManagement/Sprint1/sprintboard.png) 
 
 
 
