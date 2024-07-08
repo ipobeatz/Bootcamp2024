@@ -61,6 +61,13 @@ Field Analysis, hassas tarımı kolaylaştırmak için geniş miktarda toprak ve
 - **Ürün Durumu**: Ekran görüntüleri:
   ![Screenshot 1](https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint1/icon.png)
 
+**Sprint Durumu**: Daily Scrum yapılamadı çünkü mesajlara dönüt alınamadı.
+
+- **Sprint Notları**:
+- Uygulama yönetimi için miro kullanımına karar verildi.
+- Firebase giriş sisteminin olmasına karar verildi.
+- Mimari için getX teknolojisi kullanılmasına karar verildi.
+- Uygulama genel temanın sarı olmasına karar verildi.
 
 - **Sprint Review**: 
 Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, firebase'e henüz bağlanma sağlanamadı, uygulama için veritabanı olarak firebase servisleri henüz aktif edilemedi ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: İbrahim Çakır
