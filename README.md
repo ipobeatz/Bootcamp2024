@@ -58,7 +58,8 @@ Field Analysis, hassas tarımı kolaylaştırmak için geniş miktarda toprak ve
 - **Sprint board update**: Sprint board screenshotları: 
 ![Backlog 1](https://raw.githubusercontent.com/ipobeatz/Bootcamp2024/main/ProjectManagement/Sprint1/sprintboard.png) 
 
-- **Ürün Durumu**: Ekran görüntüleri:
+ - **Ürün Durumu**: Ekran görüntüleri:
+  ![Backlog 1]
   ![Screenshot 1](https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint1/icon.png)
 
 **Sprint Durumu**: Daily Scrum yapılamadı çünkü mesajlara dönüt alınamadı.
