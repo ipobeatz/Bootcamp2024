@@ -63,7 +63,7 @@ Field Analysis, hassas tarımı kolaylaştırmak için geniş miktarda toprak ve
 
 **Sprint Durumu**: Daily Scrum yapılamadı çünkü mesajlara dönüt alınamadı.
 
-- **Sprint Notları**:
+**Sprint Notları**:
 - Uygulama yönetimi için miro kullanımına karar verildi.
 - Firebase giriş sisteminin olmasına karar verildi.
 - Mimari için getX teknolojisi kullanılmasına karar verildi.
