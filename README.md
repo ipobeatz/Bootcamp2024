@@ -98,6 +98,11 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
  **Ürün Durumu**: Ekran görüntüleri:
 
+<video width="400" controls>
+  <source src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint2/screenshot.webm" type="video/webm">
+  Your browser does not support the video tag.
+</video>
+
 <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint2/screenshot.png" alt="Screenshot 1" width="400"/>
 
 **Sprint Review**: 
