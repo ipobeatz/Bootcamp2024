@@ -93,3 +93,6 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
  **Ürün Durumu**: Ekran görüntüleri:
 
 <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint2/screenshot.png" alt="Screenshot 1" width="400"/>
+
+- **Sprint Review**: 
+Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, firebase'e henüz bağlanma sağlanamadı, uygulama içerisinde chart ekranı tasarlanmış olup kullanıma hazırlanmıştır beraberinde sıradaki işlemler ise Tohum Analiz kısmı yapılacak, Gübre tavsiye kısmı yapılacak, Envanter bakımı yapılacak.
