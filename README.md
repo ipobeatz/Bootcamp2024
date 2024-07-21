@@ -92,4 +92,4 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
  **Ürün Durumu**: Ekran görüntüleri:
 
-![Screenshot 1](https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint2/screenshot.png)
+<img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint2/screenshot.png" alt="Screenshot 1" width="400"/>
