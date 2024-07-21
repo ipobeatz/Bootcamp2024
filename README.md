@@ -87,7 +87,13 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 - Uygulamanın chart yapısı kuruldu.
 - Uygulama içi bottom navigation bar yapısı dizayn edildi.
 
-- **Sprint board update**: Sprint board screenshotları: 
+**Sprint içinde tamamlanması tahmin edilen puan**: 120 Puan
+
+**Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 340 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ikinci sprint'in en azından 120 ile devam edilmesi gerektiğine karar verildi.
+
+**Daily Scrum**: Daily Scrum yapılamadı çünkü mesajlara dönüt alınamadı.
+
+**Sprint board update**: Sprint board screenshotları: 
 ![Backlog 1](https://raw.githubusercontent.com/ipobeatz/Bootcamp2024/main/ProjectManagement/Sprint2/sprintboard2.png) 
 
  **Ürün Durumu**: Ekran görüntüleri:
