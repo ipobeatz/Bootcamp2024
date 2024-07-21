@@ -102,3 +102,9 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
 **Sprint Review**: 
 Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, firebase'e henüz bağlanma sağlanamadı, uygulama içerisinde chart ekranı tasarlanmış olup kullanıma hazırlanmıştır beraberinde sıradaki işlemler ise Tohum Analiz kısmı yapılacak, Gübre tavsiye kısmı yapılacak, Envanter bakımı yapılacak.
+
+**Sprint Retrospective:**
+  - Uygulamanın genel işleyiş mantığına karar verildi.
+  - Takım içindeki görev dağılımı aktiflik olmadığından yapılamamıştır.
+  - Takım üyelerini aktif olmadığından uygulamaya tek başına devam edilmiştir.
+  - Uygulamanın kullanıcı bazlı anlatımı kolaylaştırılmıştır.
