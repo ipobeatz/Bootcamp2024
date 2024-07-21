@@ -89,3 +89,7 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![Backlog 1](https://raw.githubusercontent.com/ipobeatz/Bootcamp2024/main/ProjectManagement/Sprint2/sprintboard2.png) 
+
+ **Ürün Durumu**: Ekran görüntüleri:
+
+![Screenshot 1](https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint2/screenshot.png)
