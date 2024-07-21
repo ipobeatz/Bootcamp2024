@@ -72,11 +72,17 @@ Field Analysis, hassas tarımı kolaylaştırmak için geniş miktarda toprak ve
 - Uygulama genel temanın sarı olmasına karar verildi.
 
 - **Sprint Review**: 
-Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, firebase'e henüz bağlanma sağlanamadı, uygulama için veritabanı olarak firebase servisleri henüz aktif edilemedi ve eksiklikler değerlendirilmiştir. Sprint Review katılımcıları: İbrahim Çakır
+Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlanmış, firebase'e henüz bağlanma sağlanamadı, uygulama için veritabanı olarak firebase servisleri henüz aktif edilemedi ve eksiklikler değerlendirilmiştir.
+**Sprint Review katılımcıları**: İbrahim Çakır
 
 - **Sprint Retrospective:**
   - Roller ile ilgili düzenleme yapılmıştır.
   - Takım içindeki görev dağılımı aktiflik olmadığından yapılamamıştır.
   - Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
  
+# Sprint 2
 
+**Sprint Notları**:
+- Uygulamanın temel yapısı kuruldu.
+- Uygulamanın chart yapısı kuruldu.
+- Uygulama içi bottom navigation bar yapısı dizayn edildi.
