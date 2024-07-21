@@ -86,3 +86,6 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 - Uygulamanın temel yapısı kuruldu.
 - Uygulamanın chart yapısı kuruldu.
 - Uygulama içi bottom navigation bar yapısı dizayn edildi.
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1](https://raw.githubusercontent.com/ipobeatz/Bootcamp2024/main/ProjectManagement/Sprint2/sprintboard2.png) 
