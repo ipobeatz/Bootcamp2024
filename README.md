@@ -91,7 +91,7 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
 **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 340 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ikinci sprint'in en azından 120 ile devam edilmesi gerektiğine karar verildi.
 
-**Daily Scrum**: Daily Scrum yapılamadı çünkü mesajlara dönüt alınamadı.
+**Daily Scrum**: <blockquote class="imgur-embed-pub" lang="en" data-id="a/12umyrv"  ><a href="https://imgur.com/a/XNPrcgq">Ekran Görüntüleri</a></blockquote>
 
 **Sprint board update**: Sprint board screenshotları: 
 ![Backlog 1](https://raw.githubusercontent.com/ipobeatz/Bootcamp2024/main/ProjectManagement/Sprint2/sprintboard2.png) 
