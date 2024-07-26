@@ -19,11 +19,12 @@ class _MyAppState extends State<MyApptest> {
   void initState() {
     super.initState();
     loadModel();
+    print('Trying to load the model...');
   }
 
   Future<void> loadModel() async {
     try {
-      _interpreter = await Interpreter.fromAsset('simple_random_model.tflite');
+      _interpreter = await Interpreter.fromAsset('assets/simple_random_model.tflite');
       print('Model loaded successfully');
     } catch (e) {
       print('Failed to load model: $e');
@@ -32,6 +33,7 @@ class _MyAppState extends State<MyApptest> {
       });
     }
   }
+
 
   Future<void> predictNumber(double input) async {
     if (_interpreter == null) {

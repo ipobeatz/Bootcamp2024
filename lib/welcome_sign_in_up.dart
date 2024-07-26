@@ -34,7 +34,7 @@ class LoginScreen extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.yellow, Colors.orange],
+                colors: [Colors.yellow.shade300, Colors.orange.shade300],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -54,11 +54,20 @@ class LoginScreen extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        'Login',
+                        'Hello Again!',
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
-                          color: Colors.deepPurple,
+                          color: Colors.black,
+                        ),
+                      ),
+                      SizedBox(width: 10,height: 3,),
+                      Text(
+                        "Welcome back you've been missed!",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.black,
                         ),
                       ),
                       const SizedBox(height: 16),
@@ -87,7 +96,7 @@ class LoginScreen extends StatelessWidget {
                         alignment: Alignment.centerRight,
                         child: TextButton(
                           onPressed: () {
-
+                            // Handle "Forget Password?" action
                           },
                           child: const Text(
                             'Forget Password?',
@@ -95,47 +104,88 @@ class LoginScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 24),
-                      OutlinedButton(
+                      const SizedBox(height: 5),
+                      ElevatedButton(
                         onPressed: () {
-                          // Handle "Login" action
+                          // Handle "Sign In" action
                         },
-                        style: OutlinedButton.styleFrom(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 60,
-                            vertical: 15,
-                          ),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.black, // Background color
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          side: BorderSide(color: Colors.yellow.shade800),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 110,
+                            vertical: 15,
+                          ),
                         ),
                         child: const Text(
-                          'Login',
-                          style: TextStyle(color: Colors.black),
+                          'Sign In',
+                          style: TextStyle(color: Colors.white), // Text color
                         ),
                       ),
-                      const SizedBox(height: 10),
-                      TextButton(
-                        onPressed: () {
-                          Navigator.of(context).pushReplacement(MaterialPageRoute(
-                            builder: (context) => MyApptest(),
-                          ));
-                        },
-                        style: TextButton.styleFrom(
-                          backgroundColor: Colors.black,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 55,
-                            vertical: 15,
+                      const SizedBox(height: 16),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Divider(
+                              thickness: 1,
+                              color: Colors.grey,
+                            ),
                           ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                            child: Text(
+                              'or continue with',
+                              style: TextStyle(color: Colors.grey),
+                            ),
                           ),
-                        ),
-                        child: const Text(
-                          'Sign Up',
-                          style: TextStyle(color: Colors.white),
-                        ),
+                          Expanded(
+                            child: Divider(
+                              thickness: 1,
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 16),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.black, width: 2),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: IconButton(
+                              icon: const Icon(Icons.g_mobiledata),
+                              color: Colors.black,
+                              iconSize: 30,
+                              onPressed: () {
+                                // Handle "Sign in with Google" action
+                              },
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 8),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text("Not a member?"),
+                          const SizedBox(width: 0), // Buradaki boşluğu kaldırıyoruz
+                          TextButton(
+                            onPressed: () {
+                              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                                builder: (context) => MyApptest(),
+                              ));
+                            },
+                            child: const Text(
+                              'Register now',
+                              style: TextStyle(color: Colors.blue),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
