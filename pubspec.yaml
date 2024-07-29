@@ -18,6 +18,12 @@ dependencies:
   firebase_auth: ^5.1.2
   tflite_flutter: ^0.10.4
   tflite: ^1.1.2
+  salomon_bottom_bar: ^3.3.2
+  google_maps_flutter: ^2.0.6
+  latlong2: ^0.8.1
+  flutter_map: ^4.0.0
+  shared_preferences: ^2.0.13
+  cloud_firestore: ^5.1.0
 
 dev_dependencies:
   flutter_test:

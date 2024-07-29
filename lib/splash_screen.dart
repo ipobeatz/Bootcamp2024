@@ -1,8 +1,7 @@
-import 'package:field_analysis/welcome_sign_in_up.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'login_screen.dart';
 import 'main_screen.dart';
+import 'auth/sign_in.dart';
 
 class SplashScreenWidget extends StatefulWidget {
   const SplashScreenWidget({super.key});
@@ -22,19 +21,28 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> with SingleTick
       duration: const Duration(seconds: 2),
       vsync: this,
     );
-
     _animation = CurvedAnimation(parent: _controller, curve: Curves.easeIn);
 
     _controller.forward();
     _navigateToHome();
   }
 
-  _navigateToHome() async {
-    await Future.delayed(const Duration(seconds: 3), () {});
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => const WelcomeSign()),
-    );
+  void _navigateToHome() async {
+    await Future.delayed(const Duration(seconds: 2), () {
+      if (FirebaseAuth.instance.currentUser != null) {
+        // Kullanıcı oturumu açık, ana sayfaya yönlendir
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => MyHomePage()), // Ana sayfanız burada tanımlı olmalı
+        );
+      } else {
+        // Kullanıcı oturumu kapalı, giriş sayfasına yönlendir
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => LoginScreen()),
+        );
+      }
+    });
   }
 
   @override
@@ -66,9 +74,9 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> with SingleTick
                   height: 220,
                 ),
               ),
-              const SizedBox(height: 5), // Adjusted height
+              const SizedBox(height: 5),
               Padding(
-                padding: const EdgeInsets.only(top: 1.0), // Moves the texts up by 1dp
+                padding: const EdgeInsets.only(top: 1.0),
                 child: Column(
                   children: [
                     FadeTransition(
@@ -82,7 +90,7 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> with SingleTick
                         ),
                       ),
                     ),
-                    const SizedBox(height: 5), // Adjusted height between texts
+                    const SizedBox(height: 5),
                     FadeTransition(
                       opacity: _animation,
                       child: const Text(

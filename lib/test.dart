@@ -45,12 +45,12 @@ class _MyAppState extends State<MyApptest> {
 
     // Girdiyi ve çıktıyı hazırlayın
     var inputTensor = [input];
-    var outputTensor = List.filled(3, 0.0);
+    var outputTensor = List.generate(1, (index) => List.filled(3, 0.0));  // Güncellendi
 
     _interpreter!.run(inputTensor, outputTensor);
 
     // En yüksek olasılıklı sınıfı bulun
-    int predictedIndex = outputTensor.indexOf(outputTensor.reduce((curr, next) => curr > next ? curr : next));
+    int predictedIndex = outputTensor[0].indexOf(outputTensor[0].reduce((curr, next) => curr > next ? curr : next));
 
     setState(() {
       _result = "Predicted: $predictedIndex";

@@ -1,34 +1,39 @@
 import 'package:field_analysis/test.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
-import 'main.dart';
-
-void main() {
-  runApp(const WelcomeSign());
-}
-
-class WelcomeSign extends StatelessWidget {
-  const WelcomeSign({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Login Screen',
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: const LoginScreen(),
-    );
-  }
-}
+import 'package:field_analysis/main_screen.dart';
+import 'package:field_analysis/main_screen.dart';
+import 'package:field_analysis/auth/sign_up.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+   LoginScreen({super.key});
+
+  // FirebaseAuth instance'ını oluştur
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
+  // Giriş yapma fonksiyonunu tanımla
+  Future<void> signInWithEmail(BuildContext context, String email, String password) async {
+    try {
+      await _auth.signInWithEmailAndPassword(email: email, password: password);
+      // Giriş başarılıysa, HomePage'e yönlendir
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => const MyHomePage()),
+      );
+    } on FirebaseAuthException catch (e) {
+      // Hata olursa kullanıcıya bir uyarı göster
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(e.message ?? "An error occurred during sign in."),
+      ));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController emailController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
+
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Container(
@@ -61,7 +66,7 @@ class LoginScreen extends StatelessWidget {
                           color: Colors.black,
                         ),
                       ),
-                      SizedBox(width: 10,height: 3,),
+                      SizedBox(width: 10, height: 3),
                       Text(
                         "Welcome back you've been missed!",
                         style: TextStyle(
@@ -72,6 +77,7 @@ class LoginScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 16),
                       TextField(
+                        controller: emailController,
                         decoration: InputDecoration(
                           labelText: 'Email',
                           prefixIcon: Icon(Icons.email),
@@ -82,6 +88,7 @@ class LoginScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 16),
                       TextField(
+                        controller: passwordController,
                         obscureText: true,
                         decoration: InputDecoration(
                           labelText: 'Password',
@@ -96,7 +103,9 @@ class LoginScreen extends StatelessWidget {
                         alignment: Alignment.centerRight,
                         child: TextButton(
                           onPressed: () {
-                            // Handle "Forget Password?" action
+                            Navigator.of(context).pushReplacement(MaterialPageRoute(
+                              builder: (context) => MyApptest(),
+                            ));
                           },
                           child: const Text(
                             'Forget Password?',
@@ -107,7 +116,7 @@ class LoginScreen extends StatelessWidget {
                       const SizedBox(height: 5),
                       ElevatedButton(
                         onPressed: () {
-                          // Handle "Sign In" action
+                          signInWithEmail(context, emailController.text, passwordController.text);
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.black, // Background color
@@ -162,7 +171,7 @@ class LoginScreen extends StatelessWidget {
                               color: Colors.black,
                               iconSize: 30,
                               onPressed: () {
-                                // Handle "Sign in with Google" action
+                                // Google ile giriş işlevini burada ele al
                               },
                             ),
                           ),
@@ -173,11 +182,10 @@ class LoginScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Text("Not a member?"),
-                          const SizedBox(width: 0), // Buradaki boşluğu kaldırıyoruz
                           TextButton(
                             onPressed: () {
                               Navigator.of(context).pushReplacement(MaterialPageRoute(
-                                builder: (context) => MyApptest(),
+                                builder: (context) => SignUpScreen(),
                               ));
                             },
                             child: const Text(
