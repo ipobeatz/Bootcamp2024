@@ -140,7 +140,7 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi1.png" alt="Screenshot 1" width="200"/>
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi2.png" alt="Screenshot 2" width="200"/> 
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi4.png" alt="Screenshot 4" width="200"/>
-  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/screenshot.gif" alt="Screenshot gif" width="200"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/screenshot.gif" alt="Screenshot gif" width="200" loop autoplay/>
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi6.png" alt="Screenshot 6" width="200"/>
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi7.png" alt="Screenshot 7" width="200"/>
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi8.png" alt="Screenshot 8" width="200"/>
