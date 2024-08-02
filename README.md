@@ -134,6 +134,8 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 - **Sprint board update**: Sprint board screenshotları: 
 ![Backlog 1](https://raw.githubusercontent.com/ipobeatz/Bootcamp2024/main/ProjectManagement/sprint3/miro.png) 
 
+**Ürün Durumu**: Ekran görüntüleri:
+
 <p float="left">
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi1.png" alt="Screenshot 1" width="200"/>
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi2.png" alt="Screenshot 2" width="200"/> 
