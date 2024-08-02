@@ -111,3 +111,22 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
   - Takım içindeki görev dağılımı aktiflik olmadığından yapılamamıştır.
   - Takım üyelerini aktif olmadığından uygulamaya tek başına devam edilmiştir.
   - Uygulamanın kullanıcı bazlı anlatımı kolaylaştırılmıştır.
+
+# Sprint 3
+
+**Sprint Notları**:
+- Uygulamanın yapay zeka entagrasyonu için tflite teknolojisi kullanıldı.
+- Yapay zeka analizleri daha tutarlı hale getirilmiştir.
+- Uygulamanın firestore ile entagrasyonu başarılı şekilde kullanıldı.
+- Uygulama içi bottom navigation bar son halini aldı.
+- Uygulama chart verisi canlıya alındı.
+- Ana ekran üzerindeki tarla verileri canlıya alındı.
+- Uygulama giriş çıkış token yapısı dizayn edildi.
+- Uygulama içi tarlaları görme, düzenleme, silme yapıları düzenlenmiştir.
+- Uygulama içi yapay zekada çeşitli elementlerin oranları ile çalışma ve entagrasyonu başarılı şekilde düzenlenmiştir.
+
+**Sprint içinde tamamlanması tahmin edilen puan**: 120 Puan
+
+**Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 340 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde son sprint'in 120 ile devam edilmesi ve backlogların tamamen tamamlanması gerektiğine karar verildi.
+
+**Daily Scrum**: <blockquote class="imgur-embed-pub" lang="en" data-id="a/12umyrv"  ><a href="https://imgur.com/a/2B4Dfgu">Ekran Görüntüleri</a></blockquote>
