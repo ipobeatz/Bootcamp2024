@@ -131,6 +131,9 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
 **Daily Scrum**: <blockquote class="imgur-embed-pub" lang="en" data-id="a/12umyrv"  ><a href="https://imgur.com/a/2B4Dfgu">Ekran Görüntüleri</a></blockquote>
 
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1](https://raw.githubusercontent.com/ipobeatz/Bootcamp2024/main/ProjectManagement/sprint3/miro.png) 
+
 <p float="left">
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi1.png" alt="Screenshot 1" width="200"/>
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi2.png" alt="Screenshot 2" width="200"/> 
