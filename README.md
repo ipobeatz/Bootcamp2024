@@ -132,11 +132,19 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 **Daily Scrum**: <blockquote class="imgur-embed-pub" lang="en" data-id="a/12umyrv"  ><a href="https://imgur.com/a/2B4Dfgu">Ekran Görüntüleri</a></blockquote>
 
 <p float="left">
-  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint3/ekranresmi1.png" alt="Screenshot 1" width="400"/>
-  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint3/ekranresmi2.png" alt="Screenshot 2" width="400"/>
-  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint3/ekranresmi3.png" alt="Screenshot 3" width="400"/>
-  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint3/ekranresmi4.png" alt="Screenshot 4" width="400"/>
-  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint3/ekranresmi5.png" alt="Screenshot 5" width="400"/>
-  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/Sprint3/screenshot.gif" alt="Screenshot gif" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi1.png" alt="Screenshot 1" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi2.png" alt="Screenshot 2" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi3.png" alt="Screenshot 3" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi4.png" alt="Screenshot 4" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi5.png" alt="Screenshot 5" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/screenshot.gif" alt="Screenshot gif" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi6.png" alt="Screenshot 6" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi7.png" alt="Screenshot 7" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi8.png" alt="Screenshot 8" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi9.png" alt="Screenshot 9" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi10.png" alt="Screenshot 10" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi11.png" alt="Screenshot 11" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi12.png" alt="Screenshot 12" width="400"/>
+  <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi13.png" alt="Screenshot 13" width="400"/>
 
 </p>
