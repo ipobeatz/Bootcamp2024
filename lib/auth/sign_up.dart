@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:field_analysis/main_screen.dart';
+import 'package:field_analysis/homeclass/main_screen.dart';
 import 'package:field_analysis/auth/sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:field_analysis/home_page.dart';
+import 'package:field_analysis/homeclass/home_page.dart';
 
 class SignUpScreen extends StatelessWidget {
   SignUpScreen({super.key});
 
-  // FirebaseAuth instance'ını oluştur
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   Future<void> signUpWithEmail(BuildContext context, String firstName, String lastName, String email, String password) async {
     try {
-      final userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(email: email, password: password);
+      final userCredential = await _auth.createUserWithEmailAndPassword(email: email, password: password);
 
       // Kullanıcı bilgilerini Firestore'a kaydet
       await FirebaseFirestore.instance.collection('users').doc(userCredential.user!.uid).set({
@@ -22,8 +21,7 @@ class SignUpScreen extends StatelessWidget {
         'email': email
       });
 
-      // Başarılı kayıttan sonra kullanıcıyı ana sayfaya yönlendir
-      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => MyHomePage()));
     } catch (e) {
       print('Error during sign up: $e');
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Sign up failed: $e')));

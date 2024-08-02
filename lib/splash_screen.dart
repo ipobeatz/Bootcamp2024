@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'main_screen.dart';
 import 'auth/sign_in.dart';
+import 'homeclass/main_screen.dart';
 
 class SplashScreenWidget extends StatefulWidget {
   const SplashScreenWidget({super.key});

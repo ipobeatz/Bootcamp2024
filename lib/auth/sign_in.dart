@@ -1,30 +1,117 @@
-import 'package:field_analysis/test.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:field_analysis/main_screen.dart';
-import 'package:field_analysis/main_screen.dart';
+import 'package:field_analysis/homeclass/main_screen.dart';
 import 'package:field_analysis/auth/sign_up.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class LoginScreen extends StatelessWidget {
-   LoginScreen({super.key});
+  LoginScreen({Key? key}) : super(key: key);
 
-  // FirebaseAuth instance'ını oluştur
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  final GoogleSignIn _googleSignIn = GoogleSignIn();
 
-  // Giriş yapma fonksiyonunu tanımla
+  // Email ile giriş yapma fonksiyonu
   Future<void> signInWithEmail(BuildContext context, String email, String password) async {
     try {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
-      // Giriş başarılıysa, HomePage'e yönlendir
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => const MyHomePage()),
       );
     } on FirebaseAuthException catch (e) {
-      // Hata olursa kullanıcıya bir uyarı göster
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text(e.message ?? "An error occurred during sign in."),
       ));
     }
+  }
+
+  // Google ile giriş yapma fonksiyonu
+  Future<void> signInWithGoogle(BuildContext context) async {
+    try {
+      print("Google sign-in initiated.");
+      final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
+      if (googleUser == null) {
+        // Kullanıcı giriş işlemini iptal etti
+        print("Google sign-in was canceled by the user.");
+        return;
+      }
+      print("Google sign-in succeeded: ${googleUser.email}");
+
+      final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+      print("Google authentication succeeded.");
+
+      final AuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
+      );
+      print("Google credential obtained.");
+
+      await _auth.signInWithCredential(credential);
+      print("Firebase sign-in succeeded.");
+      await FirebaseFirestore.instance.collection('users').doc(googleUser.id).set({
+        'firstName': googleUser.displayName,
+        'lastName': "",
+        'email': googleUser.email
+      });
+
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => const MyHomePage()),
+      );
+    } on FirebaseAuthException catch (e) {
+      print("FirebaseAuthException: ${e.message}");
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text(e.message ?? "An error occurred during Google sign in."),
+      ));
+    } catch (e, stackTrace) {
+      print("Unexpected error: $e");
+      print("Stack trace: $stackTrace");
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text("An unexpected error occurred."),
+      ));
+    }
+  }
+
+  // Şifre sıfırlama e-postası gönderme fonksiyonu
+  Future<void> resetPassword(BuildContext context) async {
+    TextEditingController emailController = TextEditingController();
+
+    return showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text('Reset Password'),
+          content: TextField(
+            controller: emailController,
+            decoration: InputDecoration(hintText: "Enter your email"),
+          ),
+          actions: <Widget>[
+            TextButton(
+              child: Text('Cancel'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+            TextButton(
+              child: Text('Reset'),
+              onPressed: () async {
+                try {
+                  await _auth.sendPasswordResetEmail(email: emailController.text.trim());
+                  Navigator.of(context).pop();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text("Password reset email sent")),
+                  );
+                } on FirebaseAuthException catch (e) {
+                  Navigator.of(context).pop();
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(e.message ?? "An error occurred")),
+                  );
+                }
+              },
+            ),
+          ],
+        );
+      },
+    );
   }
 
   @override
@@ -103,9 +190,7 @@ class LoginScreen extends StatelessWidget {
                         alignment: Alignment.centerRight,
                         child: TextButton(
                           onPressed: () {
-                            Navigator.of(context).pushReplacement(MaterialPageRoute(
-                              builder: (context) => MyApptest(),
-                            ));
+                            resetPassword(context);
                           },
                           child: const Text(
                             'Forget Password?',
@@ -119,7 +204,7 @@ class LoginScreen extends StatelessWidget {
                           signInWithEmail(context, emailController.text, passwordController.text);
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.black, // Background color
+                          backgroundColor: Colors.black,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8),
                           ),
@@ -130,7 +215,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                         child: const Text(
                           'Sign In',
-                          style: TextStyle(color: Colors.white), // Text color
+                          style: TextStyle(color: Colors.white),
                         ),
                       ),
                       const SizedBox(height: 16),
@@ -171,7 +256,7 @@ class LoginScreen extends StatelessWidget {
                               color: Colors.black,
                               iconSize: 30,
                               onPressed: () {
-                                // Google ile giriş işlevini burada ele al
+                                signInWithGoogle(context);
                               },
                             ),
                           ),
