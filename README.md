@@ -146,3 +146,6 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
   <img src="https://github.com/ipobeatz/Bootcamp2024/blob/main/ProjectManagement/sprint3/ekranresmi13.png" alt="Screenshot 13" width="200"/>
 
 </p>
+
+**Sprint Review**: 
+Alınan kararlar: Kullanıcının girdiği toprak verisine göre yapay zeka entegrasyonu topraktaki besin değerlerini analiz eder hale getirildi. Kullanıcıya en anlaşılabilir düzeyde bir tasarım tercih edildi. Yapay zeka kullanırken elinde bulunmayan verileri kapatma imkanı sağlanarak kullanıcı ile etkileşimi arttırıldı. Uygulama giriş çıkış firebase ve firestore teknolojileri kullanılarak tarla kayıtlarını kişisel hesabınızdan takip etmeye olanak sağlandı. Karanlık mod için çalışmalara başlandı. Yapay zekanın daha verimli analizler yapabilmesi için iklimleri ve hava durumlarını de hesap etme algoritması sağlanabilmesi adına çalışmalara başlandı. Farklı dillere çevrilmesi de planlanmaktadır.
