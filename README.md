@@ -152,3 +152,12 @@ Alınan kararlar: Kullanıcı temel sayfaları oluşturulmuş, bazıları kodlan
 
 **Sprint Review**: 
 Alınan kararlar: Kullanıcının girdiği toprak verisine göre yapay zeka entegrasyonu topraktaki besin değerlerini analiz eder hale getirildi. Kullanıcıya en anlaşılabilir düzeyde bir tasarım tercih edildi. Yapay zeka kullanırken elinde bulunmayan verileri kapatma imkanı sağlanarak kullanıcı ile etkileşimi arttırıldı. Uygulama giriş çıkış firebase ve firestore teknolojileri kullanılarak tarla kayıtlarını kişisel hesabınızdan takip etmeye olanak sağlandı. Karanlık mod için çalışmalara başlandı. Yapay zekanın daha verimli analizler yapabilmesi için iklimleri ve hava durumlarını de hesap etme algoritması sağlanabilmesi adına çalışmalara başlandı. Farklı dillere çevrilmesi de planlanmaktadır.
+
+**Sprint Retrospective:**
+  - Yapay Zeka Entegrasyonu: Bu sprintte tflite teknolojisi kullanılarak yapay zeka entegrasyonu başarılı bir şekilde gerçekleştirildi. Bu sayede, yapay zeka analizleri daha tutarlı hale getirildi ve kullanıcılara daha doğru öneriler sunulması sağlandı.
+  - Veritabanı Entegrasyonu: Uygulamanın Firestore ile entegrasyonu başarılı bir şekilde tamamlandı. Bu entegrasyon, uygulamanın veri yönetimini ve kullanıcı etkileşimlerini kolaylaştırdı.
+  - Kullanıcı Arayüzü ve Deneyimi: Uygulama içi bottom navigation bar son halini aldı ve kullanıcılar için daha sezgisel bir gezinme deneyimi sunuldu.
+  - Canlı Veriler: Uygulama içi chart verileri ve ana ekran üzerindeki tarla verileri canlıya alındı. Bu, kullanıcıların gerçek zamanlı verilere erişimini sağladı ve uygulamanın işlevselliğini artırdı.
+  - Giriş/Çıkış Sistemi: Uygulamanın giriş çıkış token yapısı dizayn edildi, bu da kullanıcı oturum yönetimini daha güvenli ve verimli hale getirdi.
+  - Tarla Yönetimi: Uygulama içi tarlaları görme, düzenleme ve silme yapıları düzenlendi, bu da kullanıcıların tarlalarını daha kolay yönetmelerine olanak tanıdı.
+  - Element Entegrasyonu: Uygulama içi yapay zekada çeşitli elementlerin oranları ile çalışma ve entegrasyonu başarılı bir şekilde düzenlendi. Bu, yapay zeka analizlerinin doğruluğunu ve kapsamını artırdı.
